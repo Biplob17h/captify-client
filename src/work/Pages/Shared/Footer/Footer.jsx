@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const texts = ["e", "g", "n", "a", "h", "c"];
   return (
     <footer className="bg-black text-white p-10">
       <div className="w-full md:w-1/3 mb-8 md:mb-0">
@@ -30,7 +29,7 @@ const Footer = () => {
               <div className="flex flex-col space-y-2">
                 <Link
                   to={"/contact"}
-                  className="hover:text-gray-300 hover-underline-animation mt-2 w-[130px]" 
+                  className="hover:text-gray-300 hover-underline-animation mt-2 w-[130px]"
                 >
                   Preference Center
                 </Link>
@@ -57,38 +56,7 @@ const Footer = () => {
             <p className="text-sm">© 2024 Captify. All Rights Reserved.</p>
           </div>
         </div>
-        <div className="flex gap-20 justify-center opacity-50 w-1/2">
-          <div>
-            {texts.map((text, i) => (
-              <div
-                key={i}
-                className="text-white text-[50px] font-bold tracking-tight"
-              >
-                {text}
-              </div>
-            ))}
-          </div>
-          <div>
-            {texts.map((text, i) => (
-              <div
-                key={i}
-                className="text-white text-[50px] font-bold tracking-tight"
-              >
-                {text}
-              </div>
-            ))}
-          </div>
-          <div>
-            {texts.map((text, i) => (
-              <div
-                key={i}
-                className="text-white text-[50px] font-bold tracking-tight"
-              >
-                {text}
-              </div>
-            ))}
-          </div>
-        </div>
+        <div className="flex gap-20 justify-center opacity-50 w-1/2 h-[300px]"></div>
       </div>
     </footer>
   );

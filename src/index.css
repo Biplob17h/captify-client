@@ -40,6 +40,38 @@ body {
   width: 100%;
   background: #0000005b;
 }
+.customBtn2 {
+  background: #a100ff;
+  padding: 2px 5px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #a100ff;
+  transition: 1s;
+  position: relative;
+  transition: ease-in;
+}
+
+.customBtn2:hover,
+.customBtn2:active {
+  color: white;
+}
+
+.customBtn2:after {
+  content: "";
+  position: absolute;
+  transition: all 0.5s;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 0;
+}
+
+.customBtn2:hover:after {
+  width: 100%;
+  background: #0000005b;
+}
 
 .hover-underline-animation {
   display: inline-block;
@@ -57,7 +89,7 @@ body {
   left: 0;
   background-color: white;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.4s ease-out;
 }
 
 .hover-underline-animation:hover::after {
@@ -67,16 +99,62 @@ body {
 
 .customDiv1 {
   width: 100%;
-  height: 500px;
+  height: 550px;
   background-color: #202020;
   color: white;
-  border: 1px solid white;
-  transition: 0.5s ease-out;
+  transition: 0.1s ease-in-out;
   position: absolute;
 }
 
 .customDiv2 {
   width: 100%;
   height: 0px;
-  transition: 0.5s ease-out;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+.customDiv3 {
+  width: 100%;
+  height: 400px;
+  background-color: #202020;
+  color: white;
+  transition: 0.1s ease-in-out;
+  position: absolute;
+}
+
+.customDiv4 {
+  width: 100%;
+  height: 0px;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+.customDiv5 {
+  width: 100%;
+  height: 190px;
+  background-color: #202020;
+  color: white;
+  transition: 0.1s ease-in-out;
+  position: absolute;
+}
+
+.customDiv6 {
+  width: 100%;
+  height: 0px;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+.customDiv7 {
+  width: 100%;
+  height: 300px;
+  background-color: #202020;
+  color: white;
+  transition: 0.1s ease-in-out;
+  position: absolute;
+  overflow: scroll;
+}
+
+.customDiv8 {
+  width: 100%;
+  height: 0px;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
 }

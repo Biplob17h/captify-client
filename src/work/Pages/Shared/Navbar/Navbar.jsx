@@ -1,17 +1,26 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaAngleRight, FaBars, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import NavbarLinksForBigdevice from "./NavbarLinksForBigdevice";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState("");
+  const [isMobileNavVisible, setIsMobileNavVisible] = useState("");
+
+  const toggleMobileNav = () => {
+    if (isMobileNavVisible === "") {
+      return setIsMobileNavVisible("nav");
+    } else {
+      setIsMobileNavVisible("");
+    }
+  };
   return (
     <div>
       {/* navbar */}
       <div>
         {/* navbar for big device */}
-        <div className="flex justify-between items-center mx-[3%] h-[100px] ">
+        <div className=" justify-between items-center mx-[3%] h-[100px] hidden md:flex ">
           <Link to={"/"} className="text-4xl font-bold">
             Captify
           </Link>
@@ -54,7 +63,157 @@ const Navbar = () => {
           </div>
         </div>
         {/* navbar for small device */}
-        <div className="flex justify-between items-center mx-[3%]"></div>
+        <div className="w-full">
+          <div className="md:hidden">
+            <div className="flex justify-between items-center py-3 px-3 bg-black text-white">
+              <FaBars
+                className="text-xl cursor-pointer"
+                onClick={toggleMobileNav}
+              />
+              <Link to="/" className="text-2xl font-bold">
+                Captify
+              </Link>
+              <Link to="/auth/userDashboard" className="text-xl">
+                <FaUser />
+              </Link>
+            </div>
+            <div
+              className={` text-white px-4 py-2  ${
+                isMobileNavVisible === "nav" ? "customDiv5" : "customDiv6"
+              }`}
+            >
+              <div className="flex flex-col">
+                <Link
+                  onClick={() => {
+                    setIsMobileNavVisible("do");
+                  }}
+                  className="py-4 flex items-center justify-between"
+                >
+                  What we do <FaAngleRight className="ml-1" />
+                </Link>
+                <Link className="py-4 flex items-center justify-between">
+                  What we think
+                </Link>
+                <Link onClick={() => {
+                    setIsMobileNavVisible("are");
+                  }} className="py-4 flex items-center justify-between">
+                  What we are <FaAngleRight className="ml-1" />
+                </Link>
+              </div>
+            </div>
+            <div
+              className={` text-white  ${
+                isMobileNavVisible === "do" ? "customDiv7" : "customDiv8"
+              }`}
+            >
+              {isMobileNavVisible === "do" && (
+                <div className="bg-black text-white px-5 py-2">
+                    <div className="mt-6">
+                      <h1 className="opacity-70 mt-4">Services</h1>
+                      <div className="mt-4 grid grid-cols-1 gap-4">
+                        <Link className="text-[17px] hover-underline-animation">
+                          Transcript Summarisation and Analysis
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Real-Time Transcripts
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Transcript Synchronisation with Video
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Predictive Case Analytics
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Automated Legal Research
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Document Review and Analysis
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          E-Discovery Solutions
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Contract Analysis and Management
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Legal Risk Assessment
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Virtual Legal Assistants
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Sentiment Analysis for Jury Selection
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Fraud Detection and Prevention
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Intellectual Property Monitoring
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Compliance Automation
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Legal Process Automation
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Litigation Strategy Optimization
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Data-Driven Legal Insights
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Expert Witness Matching
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Predictive Modeling for Case Outcomes
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          AI-Powered Brief and Memo Writing
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Client Communication Automation
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          Litigation Cost Management
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                          AI-Based Settlement Analysis
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+              )}
+            </div>
+            <div
+              className={` text-white  ${
+                isMobileNavVisible === "are" ? "customDiv7" : "customDiv8"
+              }`}
+            >
+              {isMobileNavVisible === "are" && (
+                <div className="bg-black text-white px-5 py-2">
+                    <div className="mt-6">
+                      <h1 className="opacity-70 mt-4">Under Leaders</h1>
+                      <div className="mt-4 grid grid-cols-1 gap-4">
+                        <Link className="text-[17px] hover-underline-animation">
+                        Jason Bradley
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                        Helen Lubke
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation">
+                        Samuel Bradley
+                        </Link>
+                        <Link className="text-[17px] hover-underline-animation pb-[90px]">
+                        Sharny Leung
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+              )}
+            </div>
+          </div>
+        </div>
       </div>
       {/* navbar links */}
       <NavbarLinksForBigdevice showNav={showNav}></NavbarLinksForBigdevice>
