@@ -1,16 +1,14 @@
-/* eslint-disable no-unused-vars */
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaAngleDown, FaAngleRight, FaBars, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import NavbarLinksForBigdevice from "./NavbarLinksForBigdevice";
 import { AuthContext } from "../../../ContextApi/UserContext";
 
 const Navbar = () => {
-
   const [showNav, setShowNav] = useState("");
   const [isMobileNavVisible, setIsMobileNavVisible] = useState("");
 
-  const {user} = useContext(AuthContext)
+  const { user } = useContext(AuthContext);
 
   const toggleMobileNav = () => {
     if (isMobileNavVisible === "") {
@@ -21,11 +19,11 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="z-[1000] relative">
       {/* navbar */}
       <div>
         {/* navbar for big device */}
-        <div className=" justify-between items-center mx-[3%] h-[100px] hidden md:flex ">
+        <div className=" justify-between items-center mx-[3%] h-[100px] hidden md:flex z-[100] relative">
           <Link to={"/"} className="text-4xl font-bold">
             Captify
           </Link>
@@ -60,7 +58,10 @@ const Navbar = () => {
           </div>
           <div>
             {user?.email ? (
-              <Link to={'/auth/userDashboard'} className="dropdown dropdown-end">
+              <Link
+                to={"/auth/userDashboard"}
+                className="dropdown dropdown-end"
+              >
                 <div
                   tabIndex={0}
                   role="button"
@@ -92,7 +93,7 @@ const Navbar = () => {
           </div>
         </div>
         {/* navbar for small device */}
-        <div className="w-full">
+        <div className="w-full relative z-[1000]">
           <div className="md:hidden">
             <div className="flex justify-between items-center py-3 px-3 bg-black text-white">
               <FaBars
@@ -139,8 +140,8 @@ const Navbar = () => {
               }`}
             >
               {isMobileNavVisible === "do" && (
-                <div className="bg-black text-white px-5 py-2">
-                  <div className="mt-6">
+                <div className=" text-white px-5 py-2">
+                  <div className="mt-6 pb-3">
                     <h1 className="opacity-70 mt-4">Services</h1>
                     <div className="mt-4 grid grid-cols-1 gap-4">
                       <Link className="text-[17px] hover-underline-animation">
@@ -223,7 +224,7 @@ const Navbar = () => {
               }`}
             >
               {isMobileNavVisible === "are" && (
-                <div className="bg-black text-white px-5 py-2">
+                <div className=" text-white px-5 py-2">
                   <div className="mt-6">
                     <h1 className="opacity-70 mt-4">Under Leaders</h1>
                     <div className="mt-4 grid grid-cols-1 gap-4">
@@ -236,9 +237,10 @@ const Navbar = () => {
                       <Link className="text-[17px] hover-underline-animation">
                         Samuel Bradley
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation pb-[90px]">
+                      <Link className="text-[17px] hover-underline-animation pb-20">
                         Sharny Leung
                       </Link>
+                      {/* Other links */}
                     </div>
                   </div>
                 </div>

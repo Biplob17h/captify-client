@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <Link to={"/"} className="relative">
+    <Link to={"/"} className="relative z-0">
       <div className="relative overflow-hidden">
-        <video src={heroVideo} autoPlay muted loop className="w-full" style={{ minWidth: '100%' }}></video>
+        <video src={heroVideo} autoPlay muted loop className="w-full h-full object-cover "></video>
       </div>
       <div className="absolute top-1/4 px-4 lg:px-20 w-full flex flex-col lg:flex-row">
         <div className="w-full lg:w-2/3">
@@ -31,3 +31,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
