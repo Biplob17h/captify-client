@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import footerSvg from '../../../../assets/photos/2365f8ec-fc4f-4f9e-b609-d361d99a24c1.svg'
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white p-10">
-      <div className="w-full md:w-1/3 mb-8 md:mb-0">
+      <div className="w-full md:w-1/3 mb-8 md:mb-0 ">
         <h2 className="text-3xl font-semibold ml-[13%]">Let there be change</h2>
       </div>
       <div className="flex items-center">
@@ -56,7 +57,10 @@ const Footer = () => {
             <p className="text-sm">© 2024 Captify. All Rights Reserved.</p>
           </div>
         </div>
-        <div className="flex gap-20 justify-center opacity-50 w-1/2 h-[300px]"></div>
+        <div className="flex gap-20 justify-center opacity-50 w-1/2 h-[500px]">
+          
+          <img src={footerSvg}></img>
+        </div>
       </div>
     </footer>
   );

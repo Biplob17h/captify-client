@@ -135,7 +135,7 @@ const Navbar = () => {
               </div>
             </div>
             <div
-              className={` text-white  ${
+              className={` text-white text-[16px]  ${
                 isMobileNavVisible === "do" ? "customDiv7" : "customDiv8"
               }`}
             >
