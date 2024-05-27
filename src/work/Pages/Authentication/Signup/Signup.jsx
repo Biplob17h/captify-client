@@ -1,9 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useContext } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../ContextApi/UserContext";
 
 const Signup = () => {
+  const { refresh, setRefresh } = useContext(AuthContext);
   const navigate = useNavigate();
   const handleUserSignUp = (event) => {
     event.preventDefault();
@@ -20,6 +22,7 @@ const Signup = () => {
 
     toast.success("user sign up successful");
     navigate("/auth/userDashboard");
+    setRefresh(refresh + 1);
   };
   return (
     <div className="flex justify-center min-h-screen items-center mx-5 md:mx-0">

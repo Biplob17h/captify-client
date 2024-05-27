@@ -1,141 +1,262 @@
-import './think.scss'
-import { useRef } from "react";
-import { useEffect } from "react";
+/* eslint-disable no-unused-vars */
+import "./think.scss";
 import { useState } from "react";
+
+const data = [
+  "Cloud",
+  "Cybersecurity",
+  // "Digital Emerging Technology",
+  // "Enterprise Platforms",
+  "Learning",
+  // "Marketing & Experience",
+  "Metaverse",
+  // "Private Equity",
+  "Strategy",
+  // "Supply Chain",
+  // "Sustainability",
+  // "Sales & Commerce",
+];
+
+const industryData = [
+  "Aerspace & Defense",
+  "Automotive",
+  "Banking",
+  "Capital Markets",
+  "Chemicals",
+  // "Communication & Media",
+  // "Consumer Goods & Services",
+  "Energy",
+  // "Health",
+  // "High Teach",
+  // "Industrial",
+  // "Insurances",
+  // "Life Sciences",
+  // "Natural Resources",
+  // "Public Service",
+  // "Retail",
+  // "Travel",
+  // "Utilities",
+];
+
+const contentData = [
+  "Blog",
+  "Case Study",
+  "Live Interview",
+  "Perspective",
+  "Podcast",
+  "Research Report",
+];
 
 const ThinkPage = () => {
   const [hovered, setHovered] = useState(false);
-  const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
-  const dropdownRef = useRef(null);
+  const [showDiv, setShowDiv] = useState("");
+  const [showIndustry, setshowIndustry] = useState("");
+  const [showContent, setshowContent] = useState("");
+  const [topic, setTopic] = useState(false);
+  const [industry, setIndustry] = useState(false);
+  const [content, setContent] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState([]);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setOpenDropdownIndex(null);
-      }
-    };
+  const toggleOption = (option) => {
+    setSelectedOptions((prevSelectedOptions) =>
+      prevSelectedOptions.includes(option)
+        ? prevSelectedOptions.filter((o) => o !== option)
+        : [...prevSelectedOptions, option]
+    );
+  };
 
-    document.addEventListener("mousedown", handleClickOutside);
+  const handleShowTopic = () => {
+    setTopic(!topic);
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+    if (showDiv === "") {
+      return setShowDiv("topic");
+    }
+    if (showDiv !== "" && showDiv !== "topic") {
+      return setShowDiv("topic");
+    }
+    if (showDiv === "topic") {
+      setShowDiv("");
+    }
+  };
 
-  const toggleDropdown = (index) => {
-    if (openDropdownIndex === index) {
-      setOpenDropdownIndex(null);
-    } else {
-      setOpenDropdownIndex(index);
+  const handleShowIndustry = () => {
+    setIndustry(!industry);
+
+    if (showIndustry === "") {
+      return setshowIndustry("industry");
+    }
+    if (showIndustry !== "" && showIndustry !== "industry") {
+      return setshowIndustry("industry");
+    }
+    if (showIndustry === "industry") {
+      setshowIndustry("");
+    }
+  };
+
+  const handleShowContent = () => {
+    setContent(!content);
+
+    if (showContent === "") {
+      return setshowContent("content");
+    }
+    if (showContent !== "" && showContent !== "content") {
+      return setshowContent("content");
+    }
+    if (showContent === "content") {
+      setshowContent("");
     }
   };
 
   return (
     <div className="my-[100px] ">
-      <h1 className="text-[80px] font-semibold my-[30px]">
-        Stay ahead of change
-      </h1>
-      <h3 className="text-[35px] ">
-        Explore our research, insights, and examples of real client impact,
-        designed to <br /> help you embrace the key forces of change and get to
-        value faster.
-      </h3>
-
-      <div className="flex justify-around mt-[50px] bordered-red">
-        {["Topic", "Industry", "Content Type"].map((buttonLabel, index) => (
-          <div key={index} className="relative mr-4" ref={dropdownRef}>
-            <button
-              className=" text-white text-2xl font-bold px-4 py-2 rounded focus:outline-none "
-              onClick={() => toggleDropdown(index)}
-            >
-             + {buttonLabel}
-            </button>
-            <div
-              className={`dropdown-content ${
-                openDropdownIndex === index
-                  ? "dropdown-open"
-                  : "dropdown-closed"
-              }`}
-            >
-              <ul>
-                {buttonLabel === "Topic" && (
-                  <>
-                    <li className="py-2 px-4  cursor-pointer">
-                      Topic 1
-                    </li>
-                    <li className="py-2 px-4  cursor-pointer">
-                      Topic 2
-                    </li>
-                    <li className="py-2 px-4  cursor-pointer">
-                      Topic 3
-                    </li>
-                  </>
-                )}
-                {buttonLabel === "Industry" && (
-                  <>
-                    <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
-                      Industry 1
-                    </li>
-                    <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
-                      Industry 2
-                    </li>
-                    <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
-                      Industry 3
-                    </li>
-                  </>
-                )}
-                {buttonLabel === "Content Type" && (
-                  <>
-                    <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
-                      Type 1
-                    </li>
-                    <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
-                      Type 2
-                    </li>
-                    <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
-                      Type 3
-                    </li>
-                  </>
-                )}
-              </ul>
-            </div>
-          </div>
-        ))}
+      {/* HEADER */}
+      <div className="my-24 px-4 md:px-8">
+        <div className="h1 text-7xl font-bold text-center md:text-left">
+          Stay ahed of change
+        </div>
+        <p className="text-lg md:text-3xl font-semibold my-8 text-center md:text-left">
+          Explore our research, insights, and examples of real client impact,
+          designed to
+          <br className="hidden md:block" />
+          help you embrace the key forces of change and get to value faster.
+        </p>
       </div>
 
-      <div className="flex justify-center items-center h-screen ">
-        <div
-          className={`w-full max-w-[370px] h-auto sm:h-[570px] bg-black shadow-lg rounded-lg overflow-hidden relative transition-transform duration-500 ${
-            hovered ? "scale-105" : "scale-100"
+      {/* HERO SECTION */}
+      <div className="flex flex-col md:flex-row relative mt-24">
+        <button
+          onClick={handleShowTopic}
+          className={`w-full text-2xl flex pl-5 border-white text-white py-4 bg-transparent border-l-0 ${
+            showDiv === "topic" ? "border-t border-y-0" : "border-y"
           }`}
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
         >
-          <h1 className="text-xl sm:text-2xl  font-bold text-center p-4">
-            What We Think
-          </h1>
-          <div className="relative">
-            <img
-              src="https://awsimages.detik.net.id/community/media/visual/2019/07/09/e3e4f888-6094-49b0-9234-e6762cf69800_43.jpeg?w=600&q=90"
-              alt="Placeholder"
-              className={`w-full h-auto sm:h-full object-cover transition-all duration-1000 ${
-                hovered ? "blur-20xl" : "blur-0"
-              }`}
-            />
-            <div
-              className={`absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 transition-all duration-1000 transform ${
-                hovered
-                  ? "translate-x-5 opacity-100"
-                  : "translate-x-full opacity-0"
-              }`}
+          {topic ? "- " : "+ "}
+          Topic
+        </button>
+
+        <button
+          onClick={handleShowIndustry}
+          className={`w-full text-2xl flex pl-5 border-white text-white py-4 bg-transparent border-l-0 ${
+            showIndustry === "industry"
+              ? "border-t border-l"
+              : "border-y border-l"
+          }`}
+        >
+          {industry ? "- " : "+ "}
+          Industry
+        </button>
+
+        <button
+          onClick={handleShowContent}
+          className={`w-full text-2xl flex pl-5 border-white text-white py-4 bg-transparent border-l-0 ${
+            showContent === "content"
+              ? "border-t border-l"
+              : "border-y border-l"
+          }`}
+        >
+          {content ? "- " : "+ "}
+          Content Type
+        </button>
+      </div>
+      <div
+        className={`${
+          showDiv === "topic" ? "customDiv9" : "customDiv10"
+        } px-4 md:px-8`}
+      >
+        <div className="flex flex-wrap justify-start w-full gap-5 mt-4 ml-4">
+          {data.map((option) => (
+            <button
+              key={option}
+              onClick={() => toggleOption(option)}
+              className="border border-slate-100 border-opacity-25 text-white bg-transparent text-xl hover:bg-gray-800 hover:text-white py-2 px-4 rounded"
             >
-              <p className="text-base sm:text-lg font-semibold text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, repudiandae ut? Expedita eligendi autem nam
-                dignissimos dolorum, commodi veniam dolore.
-              </p>
-            </div>
+              {selectedOptions.includes(option) && (
+                <span className="text-white">✔️</span>
+              )}
+              <span>{option}</span>
+            </button>
+          ))}
+        </div>
+        <div className="flex  text-2xl justify-end mt-[80px] sm:mt-32 mr-16 sm:mr-2.5 gap-5 ">
+          <button className="mt-[-50px]  text-xl sm:text-2xl">Clear All</button>
+          <button className="bg-purple-700 w-[150px] text-xl sm:text-2xl sm:w-[150px]  mt-[-50px] z-10">
+            Show Result
+          </button>
+        </div>
+      </div>
+      <div
+        className={`${
+          showIndustry === "industry" ? "customDiv9" : "customDiv10"
+        } px-4 md:px-8`}
+      >
+        <div className="flex gap-5 mt-4 ml-2.5">
+          <div className="flex flex-wrap justify-start w-full gap-5 mt-4 ml-4">
+            {industryData.map((option) => (
+              <button
+                key={option}
+                onClick={() => toggleOption(option)}
+                className="border border-slate-100 border-opacity-25 text-white bg-transparent text-xl hover:bg-gray-800 hover:text-white py-2 px-4 rounded"
+              >
+                {selectedOptions.includes(option) && (
+                  <span className="text-white">✔️</span>
+                )}
+                <span>{option}</span>
+              </button>
+            ))}
           </div>
+        </div>
+        <div className="flex  text-2xl justify-end mt-[80px] sm:mt-32 mr-16 sm:mr-2.5 gap-5 ">
+          <button className="mt-[-50px]  text-xl sm:text-2xl">Clear All</button>
+          <button className="bg-purple-700 w-[150px] text-xl sm:text-2xl sm:w-[150px]  mt-[-50px] z-10">
+            Show Result
+          </button>
+        </div>
+      </div>
+      <div
+        className={`${
+          showContent === "content" ? "customDiv9" : "customDiv10"
+        } px-4 md:px-8`}
+      >
+        <div className="flex gap-5 mt-4 ml-2.5">
+          <div className="flex flex-wrap justify-start w-full gap-5 mt-4 ml-4">
+            {contentData.map((option) => (
+              <button
+                key={option}
+                onClick={() => toggleOption(option)}
+                className="border border-slate-100 border-opacity-25 text-white bg-transparent text-xl hover:bg-gray-800 hover:text-white py-2 px-4 rounded"
+              >
+                {selectedOptions.includes(option) && (
+                  <span className="text-white">✔️</span>
+                )}
+                <span>{option}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="flex  text-2xl justify-end mt-[80px] sm:mt-32 mr-16 sm:mr-2.5 gap-5 ">
+          <button className="mt-[-50px]  text-xl sm:text-2xl">Clear All</button>
+          <button className="bg-purple-700 w-[150px] text-xl sm:text-2xl sm:w-[150px]  mt-[-50px] z-10">
+            Show Result
+          </button>
+        </div>
+      </div>
+
+      {/* CARD SECTION */}
+
+      {/* BOTTOM */}
+      <div className="my-24 px-4 md:px-8">
+        <div className="h1 text-5xl font-bold text-center md:text-left">
+          Get Foresight on the go
+        </div>
+        <p className="text-lg md:text-xl font-semibold my-8 text-center md:text-left">
+          Download the Accenture Foresight app to read, watch, or listen to our
+          best thinking—and join
+          <br className="hidden md:block" />
+          our exclusive “Foresight in 15” live digital events for quick takes on
+          big ideas.
+        </p>
+        <div className="flex justify-center md:justify-start">
+          <button className="customBtn1  z-10">Get Foresight</button>
         </div>
       </div>
     </div>
