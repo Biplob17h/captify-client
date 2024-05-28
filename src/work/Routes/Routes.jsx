@@ -7,6 +7,7 @@ import Contact from "../Pages/Contact/Contact";
 import AuthLayout from "../Layouts/AuthLayout";
 import Signup from "../Pages/Authentication/Signup/Signup";
 import UserDashbord from "../Pages/Dashbord/UserDashbord";
+import ThinkPage from "../Pages/ThinkPage/ThinkPage";
 
 const Routes = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const Routes = createBrowserRouter([
       { path: "/", element: <Home></Home> },
       { path: "/about", element: <About></About> },
       { path: "/contact", element: <Contact></Contact> },
+      { path: "/think", element: <ThinkPage></ThinkPage> },
     ],
   },
   {

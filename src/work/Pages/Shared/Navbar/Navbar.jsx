@@ -40,9 +40,9 @@ const Navbar = () => {
                 <span>What we do</span> <FaAngleDown className="pl-2" />
               </Link>
             </div>
-            <div className="ml-5 hover:text-gray-400">
-              <Link>What we think</Link>
-            </div>
+            <Link to="/think" className="ml-5 hover:text-gray-400">
+              <div>What we think</div>
+            </Link>
             <div
               onClick={() => {
                 showNav === "" || setShowNav === "do"
