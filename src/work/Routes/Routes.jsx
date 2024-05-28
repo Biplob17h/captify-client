@@ -8,6 +8,8 @@ import AuthLayout from "../Layouts/AuthLayout";
 import Signup from "../Pages/Authentication/Signup/Signup";
 import UserDashbord from "../Pages/Dashbord/UserDashbord";
 import ThinkPage from "../Pages/ThinkPage/ThinkPage";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 
 const Routes = createBrowserRouter([
   {
@@ -18,6 +20,8 @@ const Routes = createBrowserRouter([
       { path: "/about", element: <About></About> },
       { path: "/contact", element: <Contact></Contact> },
       { path: "/think", element: <ThinkPage></ThinkPage> },
+      { path: "/dashboard", element: <Dashboard></Dashboard> },
+      { path: "/update", element: <UpdateProfile></UpdateProfile> },
     ],
   },
   {
