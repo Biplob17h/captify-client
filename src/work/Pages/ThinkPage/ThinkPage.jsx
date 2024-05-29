@@ -3,7 +3,16 @@
 import { FaAngleRight } from "react-icons/fa";
 import "./think.scss";
 import { useState } from "react";
-
+import img1 from '../../../assets/photos/bag.webp'
+import img2 from '../../../assets/photos/bmw.webp'
+import img3 from '../../../assets/photos/girl-with-glass.webp'
+import img4 from '../../../assets/photos/girl-with-smile.webp'
+import img5 from '../../../assets/photos/doller.webp'
+import img6 from '../../../assets/photos/eat.webp'
+import img7 from '../../../assets/photos/full.webp'
+import img8 from '../../../assets/photos/girl-in-car.webp'
+import img9 from '../../../assets/photos/girl-in-laptop.webp'
+ 
 const data = [
   "Cloud",
   "Cybersecurity",
@@ -249,7 +258,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.Accenture.com/is/image/Accenture/MandA-TL-GlanceSkim-600x848%3Arad-card-full?fit=constrain&ts=1715034032700"
+            src={img1}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -277,7 +286,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Commercial-Banking-Top-Trends-2024-Glance-600x848%3Arad-card-full?fit=constrain&ts=1712710344494"
+            src={img2}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -305,7 +314,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Accenture-Elevate-Your-Business-With-A-Platform-Strategy%3Arad-card-full?fit=constrain&ts=1712865095473"
+            src={img9}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -332,8 +341,8 @@ const ThinkPage = () => {
 
         <div className="AnimateDiv mt-[100px]">
           <img
-            className="w-100%"
-            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Accenture-Gen-AI-Customer-Glance-Skim-600x848%3Arad-card-full?fit=constrain&ts=1716817928838"
+            className="w-[100%] h-[100%]"
+            src={img3}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -361,7 +370,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Accenture-Gen-AI-Customer-Glance-Skim-600x848%3Arad-card-full?fit=constrain&ts=1716817928838"
+            src={img5}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -387,8 +396,8 @@ const ThinkPage = () => {
         </div>
         <div className="AnimateDiv mt-[100px]">
           <img
-            className="w-100%"
-            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Glance-Tile_Smart_v1%3Arad-card-full?fit=constrain&ts=1715484557627"
+            className="w-[100%] h-[100%]"
+            src={img6}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -414,8 +423,8 @@ const ThinkPage = () => {
         </div>
         <div className="AnimateDiv mt-[100px]">
           <img
-            className="w-100%"
-            src="https://dynamicmedia.Accenture.com/is/image/Accenture/MandA-TL-GlanceSkim-600x848%3Arad-card-full?fit=constrain&ts=1715034032700"
+            className="w-[100%] h-[100%]"
+            src={img7}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -442,7 +451,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Accenture-Elevate-Your-Business-With-A-Platform-Strategy%3Arad-card-full?fit=constrain&ts=1712865095473"
+            src={img8}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
