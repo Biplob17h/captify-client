@@ -30,7 +30,7 @@ const Routes = createBrowserRouter([
     children: [
       { path: "/auth/login", element: <Login></Login> },
       { path: "/auth/signup", element: <Signup></Signup> },
-      { path: "/auth/userDashboard", element: <UserDashbord></UserDashbord> },
+      { path: "/auth/userDashboard", element: <Dashboard></Dashboard> },
     ],
   },
 ]);
