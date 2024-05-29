@@ -27,15 +27,15 @@ const HomeValueSlider = () => {
   const myData = [
     {
       id: 1,
-      title: "Accenture’s responsible AI blueprint",
+      title: "Bradley Reporting responsible AI blueprint",
       subTitle:
-        "Accenture has operationalized ethical AI in our company. Now, our responsible AI program is also helping clients around the world use AI intelligently and responsibly.",
+        "Bradley Reporting has operationalized ethical AI in our company. Now, our responsible AI program is also helping clients around the world use AI intelligently and responsibly.",
     },
     {
       id: 2,
       title: "The metaverse meets public good",
       subTitle:
-        "The World Economic Forum, Accenture and Microsoft have built a purpose-driven platform in the metaverse to drive action and cooperation and to revolutionize progress.",
+        "The World Economic Forum, Bradley Reporting and Microsoft have built a purpose-driven platform in the metaverse to drive action and cooperation and to revolutionize progress.",
     },
     {
       id: 3,
@@ -53,25 +53,25 @@ const HomeValueSlider = () => {
       id: 5,
       title: "Mondelēz International’s Data and AI Transformation",
       subTitle:
-        "The global snacking giant is laying a tasty foundation for reinvention and growth. Accenture is helping Mondelēz International to embrace the power of data and AI, build a strong digital core and implement interoperable cloud-enabled technology.",
+        "The global snacking giant is laying a tasty foundation for reinvention and growth. Bradley Reporting is helping Mondelēz International to embrace the power of data and AI, build a strong digital core and implement interoperable cloud-enabled technology.",
     },
     {
       id: 6,
       title: "Creating a sense of belonging",
       subTitle:
-        "A global retailer and Accenture co-created a multiyear inclusion and diversity strategy to facilitate a greater sense of belonging for their people.",
+        "A global retailer and Bradley Reporting co-created a multiyear inclusion and diversity strategy to facilitate a greater sense of belonging for their people.",
     },
     {
       id: 7,
       title: "Egg gives electric vehicle charging a jolt",
       subTitle:
-        "Seeking sustainability, more people are buying electric vehicles. To keep them powered up, Liberty Global and Accenture developed Egg, a renewable energy brand that makes installing home EV chargers easy and affordable.",
+        "Seeking sustainability, more people are buying electric vehicles. To keep them powered up, Liberty Global and Bradley Reporting developed Egg, a renewable energy brand that makes installing home EV chargers easy and affordable.",
     },
     {
       id: 8,
       title: "Reimagining Saudi Arabia’s economy",
       subTitle:
-        "In just five years, the Saudi Data and Artificial Intelligence Authority, in partnership with Accenture, has built a strong foundation for a globally competitive, data- and AI-driven economy.",
+        "In just five years, the Saudi Data and Artificial Intelligence Authority, in partnership with Bradley Reporting, has built a strong foundation for a globally competitive, data- and AI-driven economy.",
     },
   ];
 

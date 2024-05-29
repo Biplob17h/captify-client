@@ -65,7 +65,7 @@ const GlobalSection = () => {
               Influential People of 2024.
             </p>
             <p className="font-semibold mt-1">
-              Every day, Julie and all of us at Accenture help the world’s
+              Every day, Julie and all of us at Bradley Reporting help the world’s
               leading companies embrace continuous reinvention, with innovation
               and people at the center.
             </p>

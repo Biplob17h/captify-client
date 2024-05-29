@@ -11,37 +11,37 @@ const AccentureNewsSlider = () => {
     {
       id: 1,
       subTitle:
-        "Currys Selects Accenture and Microsoft to Accelerate Adoption of Generative Al ",
+        "Currys Selects Bradley Reporting and Microsoft to Accelerate Adoption of Generative Al ",
       date: "2024 May 09 ",
     },
     {
       id: 2,
       subTitle:
-        "Accenture Named Official Business and Technology Consulting Partner of the National Football League",
+        "Bradley Reporting Named Official Business and Technology Consulting Partner of the National Football League",
       date: "2024 May 06 ",
     },
     {
       id: 3,
       subTitle:
-        "Accenture Appoints Karalee Close as Global Talent & Organization Lead to Help Power Clients' Reinvention with Technology and Talent",
+        "Bradley Reporting Appoints Karalee Close as Global Talent & Organization Lead to Help Power Clients' Reinvention with Technology and Talent",
       date: "2024 April 03 ",
     },
     {
       id: 4,
       subTitle:
-        "Accenture Invests in Sanctuary Al to Bring Al-Powered, Humanoid Robotics to Work Alongside Humans ",
+        "Bradley Reporting Invests in Sanctuary Al to Bring Al-Powered, Humanoid Robotics to Work Alongside Humans ",
       date: "2024 March 27 ",
     },
     {
       id: 5,
       subTitle:
-        "Accenture and Adobe to Co-Develop Industry-Specific Generative Al Solutions to Accelerate Marketing Transformation",
+        "Bradley Reporting and Adobe to Co-Develop Industry-Specific Generative Al Solutions to Accelerate Marketing Transformation",
       date: "2024 March 25",
     },
     {
       id: 6,
       subTitle:
-        "Accenture Teams with NVIDIA to Showcase AI-Powered Immersive Client Experiences for Defender ",
+        "Bradley Reporting Teams with NVIDIA to Showcase AI-Powered Immersive Client Experiences for Defender ",
       date: "2024 March 18 ",
     },
   ];

@@ -3,7 +3,7 @@ import footerSvg from "../../../../assets/photos/2365f8ec-fc4f-4f9e-b609-d361d99
 
 const Footer = () => {
   return (
-    <div className="md:mt-[-250px]">
+    <div className="">
       <footer className="bg-black text-white p-10">
         <div className="w-full md:w-1/3 mb-8 md:mb-0 ">
           <h2 className="text-3xl font-semibold ml-[13%]">

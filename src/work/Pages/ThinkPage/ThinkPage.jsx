@@ -1,4 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
+import { FaAngleRight } from "react-icons/fa";
 import "./think.scss";
 import { useState } from "react";
 
@@ -112,13 +114,14 @@ const ThinkPage = () => {
       {/* HEADER */}
       <div className="my-24 px-4 md:px-8">
         <div className="h1 text-7xl font-bold text-center md:text-left">
-          Stay ahed of change
+          Leverage AI insights
         </div>
-        <p className="text-lg md:text-3xl font-semibold my-8 text-center md:text-left">
-          Explore our research, insights, and examples of real client impact,
-          designed to
+        <p className="text-lg md:text-2xl font-semibold my-8 text-center md:text-left">
+          Discover our insights and real client success stories showcasing how
+          our AI-driven legal technology
           <br className="hidden md:block" />
-          help you embrace the key forces of change and get to value faster.
+          helps you navigate key changes in litigation and achieve faster, more
+          efficient results.'
         </p>
       </div>
 
@@ -189,7 +192,7 @@ const ThinkPage = () => {
           showIndustry === "industry" ? "customDiv9" : "customDiv10"
         } px-4 md:px-8`}
       >
-        <div className="flex gap-5 mt-4 ml-2.5">
+        <div className="flex gap-5 mt-4 ml-2.5 z-20">
           <div className="flex flex-wrap justify-start w-full gap-5 mt-4 ml-4">
             {industryData.map((option) => (
               <button
@@ -215,7 +218,7 @@ const ThinkPage = () => {
       <div
         className={`${
           showContent === "content" ? "customDiv9" : "customDiv10"
-        } px-4 md:px-8`}
+        } px-4 md:px-8 `}
       >
         <div className="flex gap-5 mt-4 ml-2.5">
           <div className="flex flex-wrap justify-start w-full gap-5 mt-4 ml-4">
@@ -242,6 +245,232 @@ const ThinkPage = () => {
       </div>
 
       {/* CARD SECTION */}
+      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center   sm:justify-between ">
+        <div className="AnimateDiv mt-[100px]">
+          <img
+            className="w-100%"
+            src="https://dynamicmedia.Accenture.com/is/image/Accenture/MandA-TL-GlanceSkim-600x848%3Arad-card-full?fit=constrain&ts=1715034032700"
+            alt=""
+          />
+          <div className="absolute top-0 box-border p-3 z-50">
+            <h1 className="font-semibold text-white text-[16px]">CASE STUDY</h1>
+            <h1 className="font-semibold text-white text-xl pt-5">
+              {" "}
+              Generative Al in the driver's seat: BMW
+            </h1>
+          </div>
+          <div className="AnimateDivContent ">
+            <p className="mt-32">
+            Bradley Reporting and BMW teamed up to create a new platform that uses
+              generative AI to drive decisions across North America,
+              accelerating productivity and experiences.
+            </p>
+          </div>
+          <div className="AnimateDivButton w-full">
+            <button className="flex items-center justify-end text-[17px] text-right w-full">
+              <span className="hover-underline-animation">Expand</span>{" "}
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+
+        <div className="AnimateDiv mt-[100px]">
+          <img
+            className="w-100%"
+            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Commercial-Banking-Top-Trends-2024-Glance-600x848%3Arad-card-full?fit=constrain&ts=1712710344494"
+            alt=""
+          />
+          <div className="absolute top-0 box-border p-3 z-50">
+            <h1 className="font-semibold text-white text-[16px]">CASE STUDY</h1>
+            <h1 className="font-semibold text-white text-xl pt-5">
+              {" "}
+              Car buying in hyperdrive:smart
+            </h1>
+          </div>
+          <div className="AnimateDivContent ">
+            <p className="mt-32">
+            Bradley Reporting and BMW teamed up to create a new platform that uses
+              generative AI to drive decisions across North America,
+              accelerating productivity and experiences.
+            </p>
+          </div>
+          <div className="AnimateDivButton w-full">
+            <button className="flex items-center justify-end text-[17px] text-right w-full">
+              <span className="hover-underline-animation">Expand</span>{" "}
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+
+        <div className="AnimateDiv mt-[100px]">
+          <img
+            className="w-100%"
+            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Accenture-Elevate-Your-Business-With-A-Platform-Strategy%3Arad-card-full?fit=constrain&ts=1712865095473"
+            alt=""
+          />
+          <div className="absolute top-0 box-border p-3 z-50">
+            <h1 className="font-semibold text-white text-[16px]">CASE STUDY</h1>
+            <h1 className="font-semibold text-white text-xl pt-5">
+              {" "}
+              Generative Al in the driver's seat: BMW
+            </h1>
+          </div>
+          <div className="AnimateDivContent ">
+            <p className="mt-32">
+            Bradley Reporting and BMW teamed up to create a new platform that uses
+              generative AI to drive decisions across North America,
+              accelerating productivity and experiences.
+            </p>
+          </div>
+          <div className="AnimateDivButton w-full">
+            <button className="flex items-center justify-end text-[17px] text-right w-full">
+              <span className="hover-underline-animation">Expand</span>{" "}
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+
+        <div className="AnimateDiv mt-[100px]">
+          <img
+            className="w-100%"
+            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Accenture-Gen-AI-Customer-Glance-Skim-600x848%3Arad-card-full?fit=constrain&ts=1716817928838"
+            alt=""
+          />
+          <div className="absolute top-0 box-border p-3 z-50">
+            <h1 className="font-semibold text-white text-[16px]">RESEARCH REPORT</h1>
+            <h1 className="font-semibold text-white text-xl pt-5">
+              {" "}
+              Reinventing M&A with generative AI
+            </h1>
+          </div>
+          <div className="AnimateDivContent ">
+            <p className="mt-32">
+            Bradley Reporting and BMW teamed up to create a new platform that uses
+              generative AI to drive decisions across North America,
+              accelerating productivity and experiences.
+            </p>
+          </div>
+          <div className="AnimateDivButton w-full">
+            <button className="flex items-center justify-end text-[17px] text-right w-full">
+              <span className="hover-underline-animation">Expand</span>{" "}
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+
+        <div className="AnimateDiv mt-[100px]">
+          <img
+            className="w-100%"
+            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Accenture-Gen-AI-Customer-Glance-Skim-600x848%3Arad-card-full?fit=constrain&ts=1716817928838"
+            alt=""
+          />
+          <div className="absolute top-0 box-border p-3 z-50">
+            <h1 className="font-semibold text-white text-[16px]">PODCAST</h1>
+            <h1 className="font-semibold text-white text-xl pt-5">
+              {" "}
+             Generative AI fluency:shaping learning into a user-centered experience
+            </h1>
+          </div>
+          <div className="AnimateDivContent ">
+            <p className="mt-32">
+            Bradley Reporting and BMW teamed up to create a new platform that uses
+              generative AI to drive decisions across North America,
+              accelerating productivity and experiences.
+            </p>
+          </div>
+          <div className="AnimateDivButton w-full">
+            <button className="flex items-center justify-end text-[17px] text-right w-full">
+              <span className="hover-underline-animation">Expand</span>{" "}
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+        <div className="AnimateDiv mt-[100px]">
+          <img
+            className="w-100%"
+            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Glance-Tile_Smart_v1%3Arad-card-full?fit=constrain&ts=1715484557627"
+            alt=""
+          />
+          <div className="absolute top-0 box-border p-3 z-50">
+            <h1 className="font-semibold text-white text-[16px]">RESEARCH REPORT</h1>
+            <h1 className="font-semibold text-white text-xl pt-5">
+              {" "}
+              Top commercial banking trnds for 2024
+            </h1>
+          </div>
+          <div className="AnimateDivContent ">
+            <p className="mt-32">
+            Bradley Reporting and BMW teamed up to create a new platform that uses
+              generative AI to drive decisions across North America,
+              accelerating productivity and experiences.
+            </p>
+          </div>
+          <div className="AnimateDivButton w-full">
+            <button className="flex items-center justify-end text-[17px] text-right w-full">
+              <span className="hover-underline-animation">Expand</span>{" "}
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+        <div className="AnimateDiv mt-[100px]">
+          <img
+            className="w-100%"
+            src="https://dynamicmedia.Accenture.com/is/image/Accenture/MandA-TL-GlanceSkim-600x848%3Arad-card-full?fit=constrain&ts=1715034032700"
+            alt=""
+          />
+          <div className="absolute top-0 box-border p-3 z-50">
+            <h1 className="font-semibold text-white text-[16px]">PERSPECTIVE</h1>
+            <h1 className="font-semibold text-white text-xl pt-5">
+              {" "}
+              Supply chain networks in the afe of generative AI
+            </h1>
+          </div>
+          <div className="AnimateDivContent ">
+            <p className="mt-32">
+            Bradley Reporting and BMW teamed up to create a new platform that uses
+              generative AI to drive decisions across North America,
+              accelerating productivity and experiences.
+            </p>
+          </div>
+          <div className="AnimateDivButton w-full">
+            <button className="flex items-center justify-end text-[17px] text-right w-full">
+              <span className="hover-underline-animation">Expand</span>{" "}
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+        <div className="AnimateDiv mt-[100px]">
+          <img
+            className="w-100%"
+            src="https://dynamicmedia.Accenture.com/is/image/Accenture/Accenture-Elevate-Your-Business-With-A-Platform-Strategy%3Arad-card-full?fit=constrain&ts=1712865095473"
+            alt=""
+          />
+          <div className="absolute top-0 box-border p-3 z-50">
+            <h1 className="font-semibold text-white text-[16px]">RESEACH REPORT</h1>
+            <h1 className="font-semibold text-white text-xl pt-5">
+              {" "}
+              Level ip:Elevant your business with a platform strategy
+            </h1>
+          </div>
+          <div className="AnimateDivContent ">
+            <p className="mt-32">
+            Bradley Reporting and BMW teamed up to create a new platform that uses
+              generative AI to drive decisions across North America,
+              accelerating productivity and experiences.
+            </p>
+          </div>
+          <div className="AnimateDivButton w-full">
+            <button className="flex items-center justify-end text-[17px] text-right w-full">
+              <span className="hover-underline-animation">Expand</span>{" "}
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button className="ml-[40%] md:ml-[50%] md:my-[50px] mt-[10px] px-3 sm:py-4 py-2 border-2 border-white bg-black text-xl md:text-2xl text-white rounded transition">
+        Load More
+      </button>
 
       {/* BOTTOM */}
       <div className="my-24 px-4 md:px-8">
@@ -249,7 +478,7 @@ const ThinkPage = () => {
           Get Foresight on the go
         </div>
         <p className="text-lg md:text-xl font-semibold my-8 text-center md:text-left">
-          Download the Accenture Foresight app to read, watch, or listen to our
+          Download the Bradley Reporting Foresight app to read, watch, or listen to our
           best thinking—and join
           <br className="hidden md:block" />
           our exclusive “Foresight in 15” live digital events for quick takes on
