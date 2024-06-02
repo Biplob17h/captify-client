@@ -10,6 +10,9 @@ import UserDashbord from "../Pages/Dashbord/UserDashbord";
 import ThinkPage from "../Pages/ThinkPage/ThinkPage";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import Preference from "../Pages/Preference/Preference";
+import Privacy from "../Pages/Privacy/Privacy";
+import TermPage from "../Pages/TermPage/TermPage";
 
 const Routes = createBrowserRouter([
   {
@@ -19,6 +22,9 @@ const Routes = createBrowserRouter([
       { path: "/", element: <Home></Home> },
       { path: "/about", element: <About></About> },
       { path: "/contact", element: <Contact></Contact> },
+      { path: "/privacy", element: <Privacy></Privacy> },
+      { path: "/preference", element: <Preference></Preference> },
+      { path: "/term", element: <TermPage></TermPage> },
       { path: "/think", element: <ThinkPage></ThinkPage> },
       { path: "/dashboard", element: <Dashboard></Dashboard> },
       { path: "/update", element: <UpdateProfile></UpdateProfile> },

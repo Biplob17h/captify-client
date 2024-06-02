@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col space-y-2">
                 <Link
-                  to={"/contact"}
+                  to={"/preference"}
                   className="hover:text-gray-300 hover-underline-animation mt-2 w-[130px]"
                 >
                   Preference Center
@@ -38,18 +38,13 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-1/3 ">
               <div className="flex flex-col space-y-2">
-                <Link href="#" className="hover-underline-animation w-[130px]">
+                <Link href="/privacy" className="hover-underline-animation w-[130px]">
                   Privacy Statement
                 </Link>
-                <Link href="#" className="hover-underline-animation w-[145px]">
+                <Link href="/term" className="hover-underline-animation w-[145px]">
                   Terms & Conditions
                 </Link>
-                <Link href="#" className="hover-underline-animation w-[160px]">
-                  Cookie Policy/Settings
-                </Link>
-                <Link href="#" className="hover-underline-animation w-[164px]">
-                  Accessibility Statement
-                </Link>
+               
               </div>
             </div>
           </div>
