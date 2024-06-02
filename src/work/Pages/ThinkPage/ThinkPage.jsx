@@ -3,7 +3,16 @@
 import { FaAngleRight } from "react-icons/fa";
 import "./think.scss";
 import { useState } from "react";
-
+import img1 from '../../../assets/photos/bag.webp'
+import img2 from '../../../assets/photos/bmw.webp'
+import img3 from '../../../assets/photos/girl-with-glass.webp'
+import img4 from '../../../assets/photos/girl-with-smile.webp'
+import img5 from '../../../assets/photos/doller.webp'
+import img6 from '../../../assets/photos/eat.webp'
+import img7 from '../../../assets/photos/full.webp'
+import img8 from '../../../assets/photos/girl-in-car.webp'
+import img9 from '../../../assets/photos/girl-in-laptop.webp'
+ 
 const data = [
   "Cloud",
   "Cybersecurity",
@@ -249,7 +258,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.accenture.com/is/image/accenture/MandA-TL-GlanceSkim-600x848%3Arad-card-full?fit=constrain&ts=1715034032700"
+            src={img1}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -261,7 +270,7 @@ const ThinkPage = () => {
           </div>
           <div className="AnimateDivContent ">
             <p className="mt-32">
-              Accenture and BMW teamed up to create a new platform that uses
+            Bradley Reporting and BMW teamed up to create a new platform that uses
               generative AI to drive decisions across North America,
               accelerating productivity and experiences.
             </p>
@@ -277,7 +286,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.accenture.com/is/image/accenture/Commercial-Banking-Top-Trends-2024-Glance-600x848%3Arad-card-full?fit=constrain&ts=1712710344494"
+            src={img2}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -289,7 +298,7 @@ const ThinkPage = () => {
           </div>
           <div className="AnimateDivContent ">
             <p className="mt-32">
-              Accenture and BMW teamed up to create a new platform that uses
+            Bradley Reporting and BMW teamed up to create a new platform that uses
               generative AI to drive decisions across North America,
               accelerating productivity and experiences.
             </p>
@@ -305,7 +314,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Elevate-Your-Business-With-A-Platform-Strategy%3Arad-card-full?fit=constrain&ts=1712865095473"
+            src={img9}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -317,7 +326,7 @@ const ThinkPage = () => {
           </div>
           <div className="AnimateDivContent ">
             <p className="mt-32">
-              Accenture and BMW teamed up to create a new platform that uses
+            Bradley Reporting and BMW teamed up to create a new platform that uses
               generative AI to drive decisions across North America,
               accelerating productivity and experiences.
             </p>
@@ -332,8 +341,8 @@ const ThinkPage = () => {
 
         <div className="AnimateDiv mt-[100px]">
           <img
-            className="w-100%"
-            src="https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Gen-AI-Customer-Glance-Skim-600x848%3Arad-card-full?fit=constrain&ts=1716817928838"
+            className="w-[100%] h-[100%]"
+            src={img3}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -345,7 +354,7 @@ const ThinkPage = () => {
           </div>
           <div className="AnimateDivContent ">
             <p className="mt-32">
-              Accenture and BMW teamed up to create a new platform that uses
+            Bradley Reporting and BMW teamed up to create a new platform that uses
               generative AI to drive decisions across North America,
               accelerating productivity and experiences.
             </p>
@@ -361,7 +370,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Gen-AI-Customer-Glance-Skim-600x848%3Arad-card-full?fit=constrain&ts=1716817928838"
+            src={img5}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -373,7 +382,7 @@ const ThinkPage = () => {
           </div>
           <div className="AnimateDivContent ">
             <p className="mt-32">
-              Accenture and BMW teamed up to create a new platform that uses
+            Bradley Reporting and BMW teamed up to create a new platform that uses
               generative AI to drive decisions across North America,
               accelerating productivity and experiences.
             </p>
@@ -387,8 +396,8 @@ const ThinkPage = () => {
         </div>
         <div className="AnimateDiv mt-[100px]">
           <img
-            className="w-100%"
-            src="https://dynamicmedia.accenture.com/is/image/accenture/Glance-Tile_Smart_v1%3Arad-card-full?fit=constrain&ts=1715484557627"
+            className="w-[100%] h-[100%]"
+            src={img6}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -400,7 +409,7 @@ const ThinkPage = () => {
           </div>
           <div className="AnimateDivContent ">
             <p className="mt-32">
-              Accenture and BMW teamed up to create a new platform that uses
+            Bradley Reporting and BMW teamed up to create a new platform that uses
               generative AI to drive decisions across North America,
               accelerating productivity and experiences.
             </p>
@@ -414,8 +423,8 @@ const ThinkPage = () => {
         </div>
         <div className="AnimateDiv mt-[100px]">
           <img
-            className="w-100%"
-            src="https://dynamicmedia.accenture.com/is/image/accenture/MandA-TL-GlanceSkim-600x848%3Arad-card-full?fit=constrain&ts=1715034032700"
+            className="w-[100%] h-[100%]"
+            src={img7}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -427,7 +436,7 @@ const ThinkPage = () => {
           </div>
           <div className="AnimateDivContent ">
             <p className="mt-32">
-              Accenture and BMW teamed up to create a new platform that uses
+            Bradley Reporting and BMW teamed up to create a new platform that uses
               generative AI to drive decisions across North America,
               accelerating productivity and experiences.
             </p>
@@ -442,7 +451,7 @@ const ThinkPage = () => {
         <div className="AnimateDiv mt-[100px]">
           <img
             className="w-100%"
-            src="https://dynamicmedia.accenture.com/is/image/accenture/Accenture-Elevate-Your-Business-With-A-Platform-Strategy%3Arad-card-full?fit=constrain&ts=1712865095473"
+            src={img8}
             alt=""
           />
           <div className="absolute top-0 box-border p-3 z-50">
@@ -454,7 +463,7 @@ const ThinkPage = () => {
           </div>
           <div className="AnimateDivContent ">
             <p className="mt-32">
-              Accenture and BMW teamed up to create a new platform that uses
+            Bradley Reporting and BMW teamed up to create a new platform that uses
               generative AI to drive decisions across North America,
               accelerating productivity and experiences.
             </p>
@@ -478,7 +487,7 @@ const ThinkPage = () => {
           Get Foresight on the go
         </div>
         <p className="text-lg md:text-xl font-semibold my-8 text-center md:text-left">
-          Download the Accenture Foresight app to read, watch, or listen to our
+          Download the Bradley Reporting Foresight app to read, watch, or listen to our
           best thinking—and join
           <br className="hidden md:block" />
           our exclusive “Foresight in 15” live digital events for quick takes on

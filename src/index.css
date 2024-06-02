@@ -145,7 +145,7 @@ body {
 }
 .customDiv7 {
   width: 100%;
-  height: 355px;
+  height: 100vh;
   background-color: #202020;
   color: white;
   transition: 0.1s ease-in-out;
@@ -226,25 +226,105 @@ body {
   bottom: 0%;
 }
 
-.customPhoto1{
+.customPhoto1 {
   width: 100%;
   height: 500px;
   object-fit: cover;
   overflow: hidden;
 }
-.backgroundImg1{
+.backgroundImg1 {
   background-image: url(./assets/photos/grobal.png);
   background-repeat: no-repeat;
+  width: 100%;
   background-size: auto;
   background-position: center;
-  overflow: hidden;
   background-attachment: fixed;
-
 }
-.customGlobalDiv1{
-  width: 100%;
+.customGlobalDiv1 {
+  width: 100;
   height: 300px;
   object-fit: cover;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.customGlobalDiv2 {
+  transition: all 0.5s ease-in;
+  overflow: hidden;
+}
+
+.customGlobalDiv2 .div1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in;
+}
+
+.customGlobalDiv2 .div2 {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in;
+}
+
+.customGlobalDiv2:hover .div1 {
+  bottom: 100%;
+}
+
+.customGlobalDiv2:hover .div2 {
+  bottom: 0;
+}
+
+.container {
+  position: relative;
+  margin-top: 50vh;
+}
+
+#expand {
+  background: rgb(33, 158, 189);
+  height: 100vh;
+  min-width: 20%;
+  min-height: 400px;
+  top: 0;
+  will-change: width;
+}
+
+#show {
+  width: 100%;
+  background: red;
+  height: 100vh;
+}
+
+.customLogo {
+  position: absolute;
+  width: 350px;
+  height: 70px;
+  top: 10px;
+  box-sizing: border-box;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+}
+.customLogo img {
+  width: 70px;
+  border-radius: 5px;
+  transition: 0.5s ease-out;
+}
+
+.customLogoText {
+  position: absolute;
+  bottom: -70%;
+  font-size: 30px;
+  font-weight: 700;
+  transition: 0.5s ease-out;
+}
+
+.customLogo:hover img {
+  width: 20px;
+  transition: 0.5s ease-out;
+}
+.customLogo:hover .customLogoText {
+  bottom: 0;
+  transition: 0.5s ease-out;
 }

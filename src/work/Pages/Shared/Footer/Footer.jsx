@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import footerSvg from '../../../../assets/photos/2365f8ec-fc4f-4f9e-b609-d361d99a24c1.svg'
+import footerSvg from "../../../../assets/photos/2365f8ec-fc4f-4f9e-b609-d361d99a24c1.svg";
 
 const Footer = () => {
   return (
@@ -38,10 +38,10 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-1/3 ">
               <div className="flex flex-col space-y-2">
-                <Link href="/privacy" className="hover-underline-animation w-[130px]">
+                <Link to="/privacy" className="hover-underline-animation w-[130px]">
                   Privacy Statement
                 </Link>
-                <Link href="/term" className="hover-underline-animation w-[145px]">
+                <Link to="/term" className="hover-underline-animation w-[145px]">
                   Terms & Conditions
                 </Link>
                

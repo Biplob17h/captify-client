@@ -4,6 +4,7 @@ import LiveTranscript from '../../../components/MainDashboard/LiveTranscript';
 import AudioTranscript from '../../../components/MainDashboard/AudioTranscript';
 import ResyncingAI from '../../../components/MainDashboard/ResyncingAI';
 import Mainsidebar from '../../../components/MainDashboard/Mainsidebar';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   const [activeOption, setActiveOption] = useState('dashboard');
@@ -19,7 +20,7 @@ const Dashboard = () => {
       case 'resyncing-ai':
         return <ResyncingAI/>;
       default:
-        return <div>Home</div>;
+        return <Link onClick={()=>{}} to={'/'}>Home</Link>;
     }
   };
 

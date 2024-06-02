@@ -3,6 +3,7 @@ import { FaAngleDown, FaAngleRight, FaBars, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import NavbarLinksForBigdevice from "./NavbarLinksForBigdevice";
 import { AuthContext } from "../../../ContextApi/UserContext";
+import logo from "../../../../assets/photos/logo.png";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState("");
@@ -24,9 +25,11 @@ const Navbar = () => {
       <div>
         {/* navbar for big device */}
         <div className=" justify-between items-center mx-[3%] h-[100px] hidden md:flex z-[100] relative">
-          <Link to={"/"} className="text-4xl font-bold">
-            Captify
+          <Link to={"/"} className="customLogo">
+            <img className="" src={logo} alt="" />
+            <h1 className="customLogoText">Bradley Reporting</h1>
           </Link>
+          <Link className=""></Link>
           <div className="flex text-[17px]">
             <div
               onClick={() => {
@@ -101,7 +104,7 @@ const Navbar = () => {
                 onClick={toggleMobileNav}
               />
               <Link to="/" className="text-2xl font-bold">
-                Captify
+                <img className="w-[30px] rounded-lg" src={logo} alt="" />
               </Link>
               <Link to="/auth/userDashboard" className="text-xl">
                 <FaUser />
@@ -140,77 +143,77 @@ const Navbar = () => {
               }`}
             >
               {isMobileNavVisible === "do" && (
-                <div className=" text-white px-5 py-2">
+                <div className=" text-white px-10 py-2">
                   <div className="mt-6 pb-3">
                     <h1 className="opacity-70 mt-4">Services</h1>
                     <div className="mt-4 grid grid-cols-1 gap-4">
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[290px]">
                         Transcript Summarisation and Analysis
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[165px]">
                         Real-Time Transcripts
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[285px]">
                         Transcript Synchronisation with Video
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[185px]">
                         Predictive Case Analytics
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[200px]">
                         Automated Legal Research
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[240px]">
                         Document Review and Analysis
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[170px]">
                         E-Discovery Solutions
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[270px]">
                         Contract Analysis and Management
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[170px]">
                         Legal Risk Assessment
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[180px]">
                         Virtual Legal Assistants
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[280px]">
                         Sentiment Analysis for Jury Selection
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[240px]">
                         Fraud Detection and Prevention
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[240px]">
                         Intellectual Property Monitoring
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[190px]">
                         Compliance Automation
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[200px]">
                         Legal Process Automation
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[240px]">
                         Litigation Strategy Optimization
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[200px]">
                         Data-Driven Legal Insights
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[190px]">
                         Expert Witness Matching
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[310px]">
                         Predictive Modeling for Case Outcomes
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[280px]">
                         AI-Powered Brief and Memo Writing
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[270px]">
                         Client Communication Automation
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[220px]">
                         Litigation Cost Management
                       </Link>
-                      <Link className="text-[17px] hover-underline-animation">
+                      <Link className="text-[17px] hover-underline-animation w-[220px]">
                         AI-Based Settlement Analysis
                       </Link>
                     </div>

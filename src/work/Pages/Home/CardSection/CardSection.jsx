@@ -24,7 +24,7 @@ const CardSection = () => {
         </div>
         <div className="AnimateDivContent ">
           <p className="mt-32">
-            Bradley Reporting International create a new Global HR hub that
+          Bradley Reporting International create a new Global HR hub that
             deliver employee expenses and exceptional as the guest experience
             that make marriott, marriott
           </p>
@@ -73,7 +73,7 @@ const CardSection = () => {
         </div>
         <div className="AnimateDivContent ">
           <p className="mt-32">
-            Accenture and BMW teamed up to create a new platform that uses
+          Bradley Reporting and BMW teamed up to create a new platform that uses
             generative AI to drive decisions across North America, accelerating
             productivity and experiences.
           </p>
@@ -93,13 +93,13 @@ const CardSection = () => {
           </h1>
           <h1 className="font-semibold text-white text-xl pt-5">
             {" "}
-            Accenture takes new steps to help clients scale generative Al
+            Bradley Reporting takes new steps to help clients scale generative Al
             responsibly
           </h1>
         </div>
         <div className="AnimateDivContent ">
           <p className="mt-32">
-            Accenture appoints Arnab Chakraborty as Chief Responsible Al
+          Bradley Reporting appoints Arnab Chakraborty as Chief Responsible Al
             Officer, and expands its capability to assess, design, implement,
             scale and monitor Al systems in a responsible way to help clients
             drive growth and value.
@@ -151,7 +151,7 @@ const CardSection = () => {
         </div>
         <div className="AnimateDivContent ">
           <p className="mt-32">
-            BBVA worked with Accenture to become one of the world's most
+            BBVA worked with Bradley Reporting to become one of the world's most
             customer-centric banks. Using digital technology to reach people
             where they are has helped them see massive growth.
           </p>

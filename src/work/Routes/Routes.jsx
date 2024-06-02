@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layouts/Main";
 import Login from "../Pages/Authentication/Login/Login";
@@ -36,7 +37,7 @@ const Routes = createBrowserRouter([
     children: [
       { path: "/auth/login", element: <Login></Login> },
       { path: "/auth/signup", element: <Signup></Signup> },
-      { path: "/auth/userDashboard", element: <UserDashbord></UserDashbord> },
+      { path: "/auth/userDashboard", element: <Dashboard></Dashboard> },
     ],
   },
 ]);
