@@ -3,7 +3,7 @@ import React from 'react'
 
 const TermPage = () => {
   return (
-    <div className="bg-black text-white min-h-screen flex justify-center items-center mt-[-100px]">
+    <div className="bg-black text-white min-h-screen flex justify-center items-center ">
     <div className="max-w-lg p-8 bg-black shadow-md rounded-lg">
       <h1 className="text-3xl font-semibold mb-6">Terms & Conditions</h1>
       <p className="mb-4">

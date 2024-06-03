@@ -14,6 +14,7 @@ import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import Preference from "../Pages/Preference/Preference";
 import Privacy from "../Pages/Privacy/Privacy";
 import TermPage from "../Pages/TermPage/TermPage";
+import DashLayout from "../Layouts/DashLayout";
 
 const Routes = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const Routes = createBrowserRouter([
       { path: "/term", element: <TermPage></TermPage> },
       { path: "/think", element: <ThinkPage></ThinkPage> },
       { path: "/dashboard", element: <Dashboard></Dashboard> },
-      { path: "/update", element: <UpdateProfile></UpdateProfile> },
+      
     ],
   },
   {
@@ -38,6 +39,14 @@ const Routes = createBrowserRouter([
       { path: "/auth/login", element: <Login></Login> },
       { path: "/auth/signup", element: <Signup></Signup> },
       { path: "/auth/userDashboard", element: <Dashboard></Dashboard> },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: <DashLayout></DashLayout>,
+    children: [
+      { path: "/dashboard/userDashboard", element: <Dashboard></Dashboard> },
+      { path: "/dashboard/update", element: <UpdateProfile></UpdateProfile> },
     ],
   },
 ]);
