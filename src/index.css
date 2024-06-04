@@ -236,7 +236,7 @@ body {
   background-image: url(./assets/photos/grobal.png);
   background-repeat: no-repeat;
   width: 100%;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
@@ -327,4 +327,45 @@ body {
 .customLogo:hover .customLogoText {
   bottom: 0;
   transition: 0.5s ease-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .backgroundImg1 {
+    background-image: url(./assets/photos/globalSmall.png);
+    background-size: contain;
+    background-position: center;
+  }
+
+  .customGlobalDiv2 {
+    margin-bottom: 20px;
+  }
+
+  .lg\:flex-row {
+    flex-direction: column;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 20px;
+  }
+
+  .lg\:mr-5 {
+    margin-right: 0;
+  }
+
+  .lg\:mt-\[480px\] {
+    margin-top: 0;
+  }
+
+  .lg\:mt-\[10\%\] {
+    margin-top: 0;
+  }
+
+  .lg\:ml-\[29\%\] {
+    margin-left: 0;
+  }
+
+  .lg\:w-\[42\%\] {
+    width: 100%;
+  }
 }
