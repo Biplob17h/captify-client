@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 const ExpandableDiv = () => {
   const [scroll, setScroll] = useState(0);

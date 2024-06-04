@@ -62,7 +62,7 @@ const Navbar = () => {
           <div>
             {user?.email ? (
               <Link
-                to={"/auth/userDashboard"}
+                to={"/dashboard/userDashboard"}
                 className="dropdown dropdown-end"
               >
                 <div
@@ -106,7 +106,7 @@ const Navbar = () => {
               <Link to="/" className="text-2xl font-bold">
                 <img className="w-[30px] rounded-lg" src={logo} alt="" />
               </Link>
-              <Link to="/auth/userDashboard" className="text-xl">
+              <Link to="/dashboard/userDashboard" className="text-xl">
                 <FaUser />
               </Link>
             </div>

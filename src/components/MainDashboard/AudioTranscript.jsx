@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { FaCloudUploadAlt, FaTransgender } from "react-icons/fa";
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 const AudioTranscript = () => {
   const [file, setFile] = useState(null);
@@ -17,9 +17,6 @@ const AudioTranscript = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Submit the form
-    console.log("File:", file);
-    console.log("Language:", language);
   };
   return (
     <div className="text-[16px]">
